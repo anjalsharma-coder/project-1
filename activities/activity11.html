@@ -6,7 +6,7 @@
     <title>Students marks</title>
 </head>
 <body>
-    <form>
+    <form oninput="x" value= parseInt(a.value)+parseInt(b.value)+parseInt(c.value)+parseInt(d.value)>
         <fieldset>
             <legend>
                 Students marks
@@ -14,10 +14,43 @@
             <label>Full name:</label>
             <input type="text" id="Full name" name="Full name" placeholder="Enter your full name"><br><br>
             <label>Enter marks</label><br>
-            <
+            <select name="subject" id="subject">
+            <option value="Mathematics">Mathematics</option>
+            <option value="english">English</option>
+            <option value="Social studies">Social Studies</option>
+            <option value="Science">Science</option><br><br>
+            </select>
+            <input type="number" name="a.value" id="a.value"><br><br>
+            <select>
+            <option value="Mathematics">Mathematics</option>
+            <option value="english">English</option>
+            <option value="Social studies">Social Studies</option>
+            <option value="Science">Science</option>
+            </select>
+            <input type="number" name="b.value" id="b.value">
+            <br><br>
+            <select>
+            <option value="Mathematics">Mathematics</option>
+            <option value="english">English</option>
+            <option value="Social studies">Social Studies</option>
+            <option value="Science">Science</option>
+            </select>
+            <input type="number" name="c.value" id="c.value">
+            <br><br>
+            <select>
+            <option value="Mathematics">Mathematics</option>
+            <option value="english">English</option>
+            <option value="Social studies">Social Studies</option>
+            <option value="Science">Science</option>
+            </select>
+            <input type="number" name="d.value" id="d.value"><br><br>
+            <label>Average:</label>
+            <output name="x" for=" a.value b.value c.value d.value "></output><br><br>
+
+            <center>
+            <input type="submit">
+        </center>
         </fieldset>
-
-
     </form>
 </body>
 </html>
