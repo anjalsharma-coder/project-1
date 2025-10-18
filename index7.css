@@ -1,4 +1,12 @@
 /*Now I know how to add comments in css */
+
 h2{   background-color: beige;
-        color: rgb(221, 138, 12);}
-*{font-family: 'Times New Roman', Times, serif;}
+        color: rgb(221, 138, 12);
+}
+h1{
+        background-color:black;
+        color: white
+}
+* {
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
