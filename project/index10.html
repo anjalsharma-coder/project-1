@@ -4,8 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+    ul > li{
+    color: rgb(33, 77, 21);
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    }
+    h3+p { font-size: 20px ;
+            font-family:  sans-serif;
+    }
+
+    input[type="text"]{ border: 5px solid rgb(141, 203, 161)
+    }
+
+    a:hover{ color: rgb(205, 94, 90);
+    background-color: rgb(24, 25, 23);
+    font-size: 50px;    
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    li:nth-child(3){
+        color: rgb(132, 189, 189);
+    }
+
+    div:not(.div3) {background-color: black;
+                 color: white;
+    }
+    .div2::before{ 
+        content: "Hi,";
+        color:rgb(45, 236, 7);
+        background-color: bisque;
+    }
+    .div1::after{
+        content: ", Especially durin making a website";
+        background-color: blue;
+    }
+    p::first-letter{
+        color:rgb(42, 161, 161);
+        font-size: 50px;
+    }
+    </style>
 </head>
 <body>
-    
+        <ul>
+            <li>I love coding</li>
+            <li>I love coding</li>
+            <li>I love coding</li>
+        </ul>
+        <br><br>
+        <h3>HII</h3>
+        <p>Hello</p>
+    <br><br>
+        <input type="text" placeholder="Type your name here"><br><br>
+        <br><br>
+        <a href="https://www.codingal.com/student/dashboard/classes/36628037/">Click here to open codingal</a>
+        <br><br><br>
+            <div class="div1">I love coding</div>
+            <div class="div2">I love coding</div>
+            <div class="div3">I love coding</div>
+
 </body>
 </html>
