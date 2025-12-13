@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <H1>Javascript string methods</H1>
+
+    <script>
+        var x = "COdInGaL is the coding app"
+        document.write(x.toUpperCase())
+        document.write("<br>")
+        document.write(x.toLowerCase())
+        document.write("<br>")
+        document.write(x.startsWith("Codingal"))
+        document.write("<br>")
+        document.write(x.startsWith("app"))
+        document.write("<br>")
+        var w = "my name is"
+        var pat = new RegExp("is")
+        var result = pat.test(w)
+        document.write(result)
+    </script>
+</body>
+
+</html>
