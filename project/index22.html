@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Finding values of sin, cos, tan using argument object</h1>
+    <p id=sin></p>
+    <p id=tan></p>
+    <p id=cos></p>
+<script>
+    // Define degToRad before using it
+    function degToRad(deg) {
+        return deg * (Math.PI / 180);
+    }
+    function findsin() {
+        return Math.sin(degToRad(89))
+    }
+    document.getElementById("sin").innerHTML = "Sin value is " + findsin()
+
+    function findcos() {
+            return Math.cos(degToRad(67)) //degToRad this is used to change degrees to radians
+        }
+        document.getElementById("cos").innerHTML = "Cos value is " + findcos()
+
+    function findtan() {
+            return Math.tan(degToRad(45))
+        }
+        document.getElementById("tan").innerHTML = "Tan value is " + findtan()
+</script>
+</body>
+</html>
