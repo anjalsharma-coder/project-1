@@ -6,6 +6,22 @@
     <title>Document</title>
 </head>
 <body>
-    
+
+    <p id="CDATE"></p>
+    <p id="Random rounded"> </p>
+    <p id = Random></p>
+    <script>
+        var currentDate = new Date()
+       document.getElementById("CDATE").innerHTML = "This is a the date today with day : " +  currentDate;
+
+       const randomnumber = Math.random();
+       const roundednumber = Math.round(randomnumber);
+    document.getElementById("Random rounded").innerHTML = "4 random numbers between 0 and 1( Fact: It will be always 0 or 1): " + roundednumber;
+
+        for (let i = 0; i < 5; i++) {
+                let randomNumber = Math.random();
+            }
+    document.getElementById("Random").innerHTML = "Random number: " + randomnumber;
+       </script>
 </body>
 </html>
