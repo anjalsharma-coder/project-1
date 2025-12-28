@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="index"></p>
+    <p id="social"></p>
+    <p id="join"></p>
+    <p id="pop"></p>
+
+    <script>
+        var cool = {
+            FavHobby: "BeingHappy",
+            Name: "Anjal",
+            Year: 12,
+            Age: 16
+        }
+        document.getElementById("index").innerText = cool.Name + " is " + cool.Age + ".";
+
+            const socialmedia = [
+            "Instagram",
+            "Snapchat",
+            "Twitter",
+            "Tiktok"
+            ]
+
+        document.getElementById("social").innerText = socialmedia[0];
+
+        let socialjoin = [
+                "Instagram",
+                "Snapchat",
+                "Twitter",
+                "Tiktok"
+            ]
+        document.getElementById("join").innerText = "Common " + " Social " + " Apps = " + socialjoin.join("/");
+
+        
+            let socialpop = [
+                "Instagram",
+                "Snapchat",
+                "Twitter",
+                "Tiktok"
+            ]
+
+        document.getElementById("pop").innerText = socialpop.pop();
+
+    </script>
+</body>
+</html>
