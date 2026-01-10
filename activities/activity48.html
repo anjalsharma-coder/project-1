@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p id="student1"></p>
+    <p id ="student2"></p>
+
+
+    <script>
+
+        class students {
+
+            constructor(name,birthyear)  {
+                 this.name = name;
+                 this.birthyear = birthyear;
+            }
+            age() {
+                 return new Date().getFullYear() - this.birthyear;
+            }
+
+        }
+
+            const student1 = new students("Anjal", 2009);
+            const student2 = new students("Arnav", 2011);
+
+
+            document.getElementById("student1").innerHTML = `My name is ${student1.name}. I was born in ${student1.birthyear}. My age is ${student1.age()}`
+
+            document.getElementById("student2").innerHTML = `My name is ${student2.name}. I was born in ${student2.birthyear}. My age is ${student2.age()}`
+    </script>
+</body>
+</html>
