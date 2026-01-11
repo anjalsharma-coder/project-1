@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id = "descending"></p>
+    <br>
+    <p id="ascending"></p>
+
+    <script>
+        var x = [89,46,82,26]
+        x.sort(function descending(p,c){
+            return c-p;
+        }  )
+        document.getElementById("descending").innerHTML = x
+
+            x.reverse()
+        document.getElementById("ascending").innerHTML = x
+    </script>
+</body>
+</html>
