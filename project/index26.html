@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="static"></p>
+    <p id="info"></p>
+
+
+    <script>
+        class Parent {
+          constructor(name,age,hobby) {
+            this.name = "Charu";
+            this.age = 42;
+            this.hobby = "cooking";
+          }
+         showInfo() {
+                document.getElementById("info").innerHTML =
+                    "Name: " + this.name + "<br>" 
+                    + "Age: " + this.age + "<br>" 
+                    + "Hobby: " + this.hobby;
+            }
+    
+            static intro(){
+                document.getElementById("static").innerHTML = "This is a my mom:";
+            }
+        }
+
+
+        class Details extends Parent {
+            constructor (name,age,hobby) {
+                super(name,age,hobby)
+            }
+        }
+        Parent.intro();
+        
+        const myMom = new Details("Charu", 42, "cooking");
+            myMom.showInfo();
+
+    </script>
+</body>
+</html>
