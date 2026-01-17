@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="array"></p>
+    <p id="ascending"></p>
+    <p id="descending"></p>
+
+
+
+
+
+
+    <script>
+        let number =[88,688,870,587,365,362]
+        function multiply(number1){
+            return number1 * 100;
+        }
+        let numarray = number.map(multiply)
+        document.getElementById("array").innerHTML = "mapping: " + numarray;
+
+        numarray.sort(function ascending(a,b){
+            return a-b
+        })
+         document.getElementById("ascending").innerHTML = "ascending order: " + numarray;
+
+         numarray.reverse();
+          document.getElementById("descending").innerHTML = "descending order: " + numarray;
+
+    </script>
+</body>
+</html>
