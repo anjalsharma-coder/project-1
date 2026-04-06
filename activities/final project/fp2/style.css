@@ -1,0 +1,21 @@
+body{
+    margin:0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Section */
+
+#section {
+    background-color: rgb(170, 152, 130);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+/* TEXT */
+.section-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
