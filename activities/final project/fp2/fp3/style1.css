@@ -1,0 +1,35 @@
+body{
+    background-color: rgb(114, 110, 110);
+}
+
+/* Social-Media */
+#socialmedia {
+    background-color: rgb(82, 81, 81);
+}
+
+/*Social media cards*/
+
+.medial_link {
+    background-color: rgb(56, 53, 53);
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+/* ICON SIZE*/
+.media_link i {
+    font-size: 30px;
+    color: rgb(203, 193, 193);
+}
+
+/*Hover effect */
+.media_link:hover {
+    background-color: rgb(39, 36, 36);
+}
+/*FOOTER*/
+
+footer{
+    background-color:rgb(10, 10, 10);
+}
