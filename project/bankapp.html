@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>BANK APP</h1>
+
+    <h4>Add Income</h4>
+    <input type="number" id="income" placeholder="Enter income">
+    <button onclick="addIncome()">Add Income</button><br><br>
+    <input type="number" id="expense" placeholder="Enter expense">
+    <button onclick="addExpense()">Add Expense</button>
+    <h4>Current Balance</h4>
+    <p id="balance">0</p>
+
+    <script>
+        let balance = 0;
+        function addIncome(){
+        let income = document.getElementById("income").value; balance = balance + Number("income")
+            document.getElementbyId(balance).innertext = balance;
+        }
+
+        function addExpense(){
+                let income = document.getElementById("expense").value; balance = balance - Number("expense")
+                document.getElementbyId(balance).innertext = balance;
+            }
+    </script>
+</body>
+</html>
