@@ -1,0 +1,10 @@
+n = int(input("How many chracters to preveiw? "))
+file = open("activity13.txt", "r")
+print(file.read(n))
+file.close()
+print()
+
+file = open("activity.txt", "r")
+lines = file.readlines()
+file.close()
+print("Total lines: ", len(lines))
