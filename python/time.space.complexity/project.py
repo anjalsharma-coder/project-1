@@ -50,9 +50,9 @@ print()
 
 print("ALGORITHM EFFICIENCY COMPARISON")
 
-print("Formula Method: Fastest because it uses only 1 calculation.")
-print("Loop Method: Slower because it repeats once for every lap.")
-print("Nested Loop Method: Slowest because it uses a loop inside another loop.")
+print("Formula Method: Fastest, uses only 1 calculation.")
+print("Loop Method: Slower,repeats once for every lap.")
+print("Nested Loop Method: Slowest, uses a loop inside another loop.")
 print()
 print("Best Method: Formula Method")
 print("Reason: It has O(1) time complexity, so it stays fast even when laps increase.")
